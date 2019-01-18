@@ -1,1 +1,0 @@
-# UPTICK Landing Page
