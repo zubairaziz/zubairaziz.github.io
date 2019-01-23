@@ -39,7 +39,22 @@ async function asyncCall() {
     var result = await resolveAfter2Seconds();
     console.log(result);
     toggleBg();
-    // expected output: 'resolved'
+    switch (currentFileName) {
+        case '':
+            navItems[0].classList.add('current');
+            break;
+        case 'about':
+            navItems[1].classList.add('current');
+            break;
+        case 'experience':
+            navItems[2].classList.add('current');
+            break;
+        case 'projects':
+            navItems[3].classList.add('current');
+            break;
+        default:
+            break;
+    }
 }
 
 function toggleBg() {
@@ -83,7 +98,9 @@ function toggleMenu() {
         for (let i = 0; i < navItems.length; i++) {
             navItems[i].classList.remove(className);
         }
-
+        for (let i = 0; i < navItems.length; i++) {
+            navItems[i].classList.remove('current');
+        }
         showMenu = false;
         asyncCall();
     }
