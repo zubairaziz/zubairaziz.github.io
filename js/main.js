@@ -35,8 +35,7 @@ function resolveAfter2Seconds() {
 }
 
 async function asyncCall() {
-    console.log('calling');
-    var result = await resolveAfter2Seconds();
+    const result = await resolveAfter2Seconds();
     console.log(result);
     toggleBg();
     switch (currentFileName) {
@@ -69,22 +68,21 @@ function toggleBg() {
 }
 
 function currentFile() {
-    let URL = window.location.href;
-    let fileNameIndex = URL.lastIndexOf("/") + 1;
-    let currentFileName = URL.substr(fileNameIndex);
-    return currentFileName;
+    const URL = window.location.href;
+    const fileNameIndex = URL.lastIndexOf('/') + 1;
+    const fileName = URL.substr(fileNameIndex);
+    return fileName;
 }
 
 function toggleMenu() {
-
     if (!showMenu) {
         menuBtn.classList.add('close');
         menu.classList.add('show');
         menuNav.classList.add('show');
         menuBrand.classList.add('show');
-        for (let i = 0; i < navItems.length; i++) {
-            if ((' ' + navItems[i].className + ' ').indexOf(' ' + className + ' ') < 0) {
-                navItems[i].className += ' ' + className;
+        for (let i = 0; i < navItems.length; i += 1) {
+            if (` ${navItems[i].className} `.indexOf(` ${className} `) < 0) {
+                navItems[i].className += ` ${className}`;
             }
         }
 
@@ -95,10 +93,10 @@ function toggleMenu() {
         menu.classList.remove('show');
         menuNav.classList.remove('show');
         menuBrand.classList.remove('show');
-        for (let i = 0; i < navItems.length; i++) {
+        for (let i = 0; i < navItems.length; i += 1) {
             navItems[i].classList.remove(className);
         }
-        for (let i = 0; i < navItems.length; i++) {
+        for (let i = 0; i < navItems.length; i += 1) {
             navItems[i].classList.remove('current');
         }
         showMenu = false;
