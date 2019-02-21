@@ -8,8 +8,8 @@
             "type": "image/x-icon"
         }
     ],
-    "start_url": ".",
+    "start_url": "https://zubairaziz.github.io",
     "display": "standalone",
-    "theme_color": "#000000",
+    "theme_color": "#F0F0F0",
     "background_color": "#ffffff"
 }
