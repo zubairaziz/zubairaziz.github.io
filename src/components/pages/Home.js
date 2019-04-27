@@ -11,20 +11,38 @@ const Home = () => (
             </h1>
             <h2 className="sm-heading">{<TextLoop delay={500} children={text} />}</h2>
             <div className="icons">
-                <a href="https://www.linkedin.com/in/zubairabaziz/">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/zubairabaziz/">
                     <i className="fab fa-linkedin fa-2x" />
                 </a>{' '}
-                <a href="https://stackoverflow.com/users/8369042/zubair?tab=profile">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://stackoverflow.com/users/8369042/zubair?tab=profile">
                     <i className="fab fa-stack-overflow fa-2x" />
                 </a>{' '}
-                <a href="https://github.com/zubairaziz">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/zubairaziz">
                     <i className="fab fa-github fa-2x" />
                 </a>{' '}
-                <a href="https://www.facebook.com/zubair0496">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/zubair0496">
                     <i className="fab fa-facebook fa-2x" />
                 </a>{' '}
-                <a href="https://www.instagram.com/zbr.aziz/">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.instagram.com/zbr.aziz/">
                     <i className="fab fa-instagram fa-2x" />
+                </a>{' '}
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.twitter.com/zbr_aziz/">
+                    <i className="fab fa-twitter fa-2x" />
                 </a>
             </div>
         </div>

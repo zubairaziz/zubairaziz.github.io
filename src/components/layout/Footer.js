@@ -39,20 +39,41 @@ function Footer() {
                             </li>
                             <li />
                             <li className="footer-icons">
-                                <a href="https://www.linkedin.com/in/zubairabaziz/">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/in/zubairabaziz/">
                                     <i className="fab fa-linkedin" />
                                 </a>{' '}
-                                <a href="https://stackoverflow.com/users/8369042/zubair?tab=profile">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://stackoverflow.com/users/8369042/zubair?tab=profile">
                                     <i className="fab fa-stack-overflow" />
                                 </a>{' '}
-                                <a href="https://github.com/zubairaziz">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://github.com/zubairaziz">
                                     <i className="fab fa-github" />
                                 </a>{' '}
-                                <a href="https://www.facebook.com/zubair0496">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.facebook.com/zubair0496">
                                     <i className="fab fa-facebook" />
                                 </a>{' '}
-                                <a href="https://www.instagram.com/zbr.aziz/">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.instagram.com/zbr.aziz/">
                                     <i className="fab fa-instagram" />
+                                </a>{' '}
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.twitter.com/zbr_aziz/">
+                                    <i className="fab fa-twitter" />
                                 </a>{' '}
                             </li>
                         </ul>

@@ -292,10 +292,11 @@ main {
         border: 3px #fff solid;
 
         &:hover {
-            opacity: 0.5;
+            opacity: 0.9;
             border-color: $secondary-color;
             @include easeOut;
             cursor: default;
+            transform: scale(1.25);
         }
     }
 }
@@ -357,63 +358,5 @@ main {
     color: $white;
 }
 
-#footer {
-    padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 150px;
-
-    .footer-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        justify-content: center;
-        grid-template-areas: 'info address contact';
-
-        .footer-info {
-            grid-area: info;
-        }
-
-        .footer-address {
-            grid-area: address;
-        }
-
-        .footer-contact {
-            grid-area: contact;
-            align-self: end;
-        }
-
-        ul {
-            li {
-                list-style-type: none;
-
-                a {
-                    @include easeOut;
-
-                    &:hover {
-                        color: $secondary-color;
-                    }
-                }
-
-                &.footer-icons {
-                    padding-top: 0.3rem;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-
-                    a {
-                        display: block;
-                        @include easeOut;
-                        padding-right: 0.6rem;
-
-                        &:hover {
-                            transform: translateY(-12px) scale(3) rotate(8deg);
-                            color: $secondary-color;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
+@import 'footer';
 @import 'mobile';
