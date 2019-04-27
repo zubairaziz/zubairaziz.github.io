@@ -1,0 +1,47 @@
+[
+    {
+        "src": "../static/img/logos/linux-logo.png",
+        "alt": "Linux",
+        "title": "Linux"
+    },
+    {
+        "src": "../static/img/logos/bash-logo.png",
+        "alt": "Bash",
+        "title": "Bash"
+    },
+    {
+        "src": "../static/img/logos/git-logo.png",
+        "alt": "Git",
+        "title": "Git"
+    },
+    {
+        "src": "../static/img/logos/office-logo.png",
+        "alt": "Microsoft Office",
+        "title": "Microsoft Office"
+    },
+    {
+        "src": "../static/img/logos/libre-logo.png",
+        "alt": "Libre Office",
+        "title": "Libre Office"
+    },
+    {
+        "src": "../static/img/logos/photoshop-logo.png",
+        "alt": "Photoshop",
+        "title": "Photoshop"
+    },
+    {
+        "src": "../static/img/logos/indesign-logo.png",
+        "alt": "InDesign",
+        "title": "InDesign"
+    },
+    {
+        "src": "../static/img/logos/gimp-logo.png",
+        "alt": "GIMP",
+        "title": "GIMP"
+    },
+    {
+        "src": "../static/img/logos/sas-logo.png",
+        "alt": "SAS",
+        "title": "SAS"
+    }
+]

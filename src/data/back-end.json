@@ -1,0 +1,57 @@
+[
+    {
+        "src": "../static/img/logos/php-logo.png",
+        "alt": "PHP",
+        "title": "PHP"
+    },
+    {
+        "src": "../static/img/logos/mysql-logo.png",
+        "alt": "MySQL",
+        "title": "MySQL"
+    },
+    {
+        "src": "../static/img/logos/apache-logo.png",
+        "alt": "Apache Web Server",
+        "title": "Apache Web Server"
+    },
+    {
+        "src": "../static/img/logos/npm-logo.png",
+        "alt": "NPM",
+        "title": "NPM"
+    },
+    {
+        "src": "../static/img/logos/node-logo.png",
+        "alt": "NodeJS",
+        "title": "NodeJS"
+    },
+    {
+        "src": "../static/img/logos/express-logo.png",
+        "alt": "Express.js",
+        "title": "Express.js"
+    },
+    {
+        "src": "../static/img/logos/mongodb-logo.png",
+        "alt": "MongoDB",
+        "title": "MongoDB"
+    },
+    {
+        "src": "../static/img/logos/java-logo.png",
+        "alt": "Java",
+        "title": "Java"
+    },
+    {
+        "src": "../static/img/logos/python-logo.png",
+        "alt": "Python",
+        "title": "Python"
+    },
+    {
+        "src": "../static/img/logos/c-logo.png",
+        "alt": "C",
+        "title": "C"
+    },
+    {
+        "src": "../static/img/logos/cpp-logo.png",
+        "alt": "C++",
+        "title": "C++"
+    }
+]

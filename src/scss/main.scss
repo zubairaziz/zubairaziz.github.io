@@ -1,0 +1,419 @@
+@import 'config';
+@import 'menu';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include background;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+small {
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// Headings
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+.text-warning {
+    color: $warning;
+}
+
+main {
+    padding: 4rem;
+    min-height: calc(100vh - 60px);
+}
+
+#home {
+    overflow: hidden;
+
+    h1 {
+        margin-top: 20vh;
+    }
+
+    .icons {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+
+        a {
+            padding: 0.75rem;
+            @include easeOut;
+            display: block;
+
+            &:hover {
+                color: $secondary-color;
+                transform: translateY(-15px) scale(2.5) rotate(10deg);
+            }
+        }
+    }
+}
+
+// About Page
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+        'bioimage bio bio'
+        'bioresume bio bio'
+        '. bio bio';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        border: $secondary-color 3px solid;
+    }
+
+    .bio-resume {
+        grid-area: bioresume;
+        margin: auto;
+        border: none;
+    }
+
+    .bio {
+        grid-area: bio;
+        font-size: 1.3rem;
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 1px, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 2px);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, -4px, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 4px);
+    }
+}
+
+// Skills Page
+.skills {
+    font-size: 1.3rem;
+
+    .skill-grid {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        background: $white;
+        color: set-text-color($white);
+        margin: 1em;
+        padding: 0.75em;
+        border: 3px solid $secondary-color;
+        border-radius: 5%;
+
+        .skill-item {
+            text-align: center;
+            align-self: center;
+            align-items: center;
+
+            .skill-img {
+                max-width: '100px';
+                height: 'auto';
+            }
+
+            .skill-img:hover {
+                animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+                perspective: 1000px;
+            }
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// Experience Page
+.timeline {
+    ul {
+        li {
+            list-style-type: none;
+            position: relative;
+            width: 6px;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 45px;
+            background: $white;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translate(-50%);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: inherit;
+            }
+
+            div {
+                position: relative;
+                bottom: 0;
+                width: 400px;
+                padding: 15px;
+                background: $white;
+                color: set-text-color($white);
+                border: 3px solid $secondary-color;
+                @include easeOut;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 7px;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                }
+
+                h3 {
+                    color: set-text-color($white);
+                    margin: 0;
+                    font-size: 1.3em;
+                    font-weight: bold;
+                }
+
+                h4 {
+                    color: set-text-color($white);
+                    margin: 0;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                }
+
+                time {
+                    display: block;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+            }
+
+            &:nth-child(odd) {
+                div {
+                    left: 45px;
+
+                    &::before {
+                        left: -15px;
+                        border-width: 8px 16px 8px 0;
+                        border-color: transparent $white transparent transparent;
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                div {
+                    left: -439px;
+
+                    &::before {
+                        right: -15px;
+                        border-width: 8px 0 8px 16px;
+                        border-color: transparent transparent transparent $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Work/Projects
+.project-grid {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+        border: 3px #fff solid;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+            cursor: default;
+        }
+    }
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 2rem;
+        border: 3px #fff solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+        &:hover {
+            padding: 0.5rem 1.5rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+
+            span {
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+}
+
+// Button Styles
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: $white;
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: $black;
+}
+
+.btn-error {
+    @extend .btn;
+    background: darken($error, 25);
+    color: $white;
+}
+
+#footer {
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 150px;
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        justify-content: center;
+        grid-template-areas: 'info address contact';
+
+        .footer-info {
+            grid-area: info;
+        }
+
+        .footer-address {
+            grid-area: address;
+        }
+
+        .footer-contact {
+            grid-area: contact;
+            align-self: end;
+        }
+
+        ul {
+            li {
+                list-style-type: none;
+
+                a {
+                    @include easeOut;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+
+                &.footer-icons {
+                    padding-top: 0.3rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    a {
+                        display: block;
+                        @include easeOut;
+                        padding-right: 0.6rem;
+
+                        &:hover {
+                            transform: translateY(-12px) scale(3) rotate(8deg);
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import 'mobile';
