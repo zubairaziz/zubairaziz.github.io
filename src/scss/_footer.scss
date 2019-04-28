@@ -1,0 +1,59 @@
+#footer {
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 150px;
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 3fr 2fr 2fr;
+        justify-content: center;
+        grid-template-areas: 'info address contact';
+
+        .footer-info {
+            grid-area: info;
+        }
+
+        .footer-address {
+            grid-area: address;
+        }
+
+        .footer-contact {
+            grid-area: contact;
+            align-self: end;
+        }
+
+        ul {
+            li {
+                list-style-type: none;
+
+                a {
+                    @include easeOut;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+
+                &.footer-icons {
+                    padding-top: 0.3rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    a {
+                        display: block;
+                        @include easeOut;
+                        padding-right: 1.2rem;
+
+                        &:hover {
+                            transform: translateY(-12px) scale(3) rotate(8deg);
+                            color: $secondary-color;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
