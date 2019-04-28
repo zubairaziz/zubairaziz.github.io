@@ -1,0 +1,76 @@
+[
+    {
+        "time": "Fall 2018 - Present",
+        "company": "Uptick Marketplace",
+        "title": "Lead Developer",
+        "responsibilities": [
+            "Led a team of developers, and trained them in using the MERN stack.",
+            "Developed server-side logic and ensured responsiveness to requests from the front-end by using other libraries and frameworks such as Express.js.",
+            "Integrated user-facing elements developed by front-end developers with server side logic.",
+            "Created and maintained database schemas for the app (mongoDB + mongoose)."
+        ]
+    },
+    {
+        "time": "Summer 2018",
+        "company": "Flower City Arts Center",
+        "title": "Graphics Design Intern",
+        "responsibilities": [
+            "Designed marketing materials for print and online distribution.",
+            "Assisted with preparing lighting studio or darkroom for members and/or clients.",
+            "Assisted with youth program classes and other events at the art center."
+        ]
+    },
+    {
+        "time": "Spring 2018 - Spring 2019",
+        "company": "NotVoodoo",
+        "title": "Full Stack Developer",
+        "responsibilities": [
+            "Worked with the LAMP stack to maintain the front-end and back-end of the website.",
+            "Worked on overhauling the front-end of the website.",
+            "Refactor and manage the back-end systems for the website.",
+            "Manage and maintain website SQL database."
+        ]
+    },
+    {
+        "time": "Fall 2017 - Spring 2019",
+        "company": "University of Rochester - IT Services",
+        "title": "Help Desk Support Technician",
+        "responsibilities": [
+            "Assist with network registration and troubleshoot wireless and wired network issues.",
+            "Troubleshoot NetID and login issues.",
+            "Provide support via a variety of methods including walk-in, telephone and chat.",
+            "Assist with various types of malware on personal computers of students, faculty and staff."
+        ]
+    },
+    {
+        "time": "Spring 2017 - Fall 2017",
+        "company": "University of Rochester - Web Design & Development",
+        "title": "Teaching Assistant",
+        "responsibilities": [
+            "Held office hours to ensure students understand course concepts.",
+            "Led a lab to assist with lab assignments.",
+            "Graded homework assignments and projects."
+        ]
+    },
+    {
+        "time": "Summer 2017",
+        "company": "Media Prima Digital",
+        "title": "Mobile Engineering Intern",
+        "responsibilities": [
+            "Worked in a team in building fully functional web applications, using various front-end and back-end technologies, following AGILE methodologies.",
+            "Worked to optimize code for better load times and SEO.",
+            "Worked with Robot Framework in automating web page tests."
+        ]
+    },
+    {
+        "time": "Fall 2015 - Fall 2017",
+        "company": "Peet's Coffee",
+        "title": "Barista",
+        "responsibilities": [
+            "Prepared and served drinks and food in accordance with health codes and café standards.",
+            "Worked on registers daily to authorize returns and exchanges.",
+            "Performed all support tasks such as cleaning cases and equipment, and restocking display cases.",
+            "Maintained café cleanliness at all times, including cleaning tables, maintaining condiment bar, and removing trash."
+        ]
+    }
+]
