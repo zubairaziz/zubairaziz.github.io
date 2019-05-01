@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6796aabc.chunk.css",
+    "main.css": "/static/css/main.1584b43a.chunk.css",
     "main.js": "/static/js/main.00bc9e48.chunk.js",
     "main.js.map": "/static/js/main.00bc9e48.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,11 +8,11 @@
     "static/js/2.1757c46a.chunk.js": "/static/js/2.1757c46a.chunk.js",
     "static/js/2.1757c46a.chunk.js.map": "/static/js/2.1757c46a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8c36bbb9f8be6890a3de49204daf56e8.js": "/precache-manifest.8c36bbb9f8be6890a3de49204daf56e8.js",
+    "precache-manifest.531c3ce982886719af6e82148b1f0003.js": "/precache-manifest.531c3ce982886719af6e82148b1f0003.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6796aabc.chunk.css.map": "/static/css/main.6796aabc.chunk.css.map",
+    "static/css/main.1584b43a.chunk.css.map": "/static/css/main.1584b43a.chunk.css.map",
     "static/media/Zubair_Developer.pdf": "/static/media/Zubair_Developer.b9537925.pdf",
-    "static/media/main.css": "/static/media/background.40451a41.jpg",
+    "static/media/main.css": "/static/media/background.c79e3428.webp",
     "static/media/bash-logo.png": "/static/media/bash-logo.43026cbd.png",
     "static/media/c-logo.png": "/static/media/c-logo.e4033de9.png",
     "static/media/cpp-logo.png": "/static/media/cpp-logo.45f949af.png",
