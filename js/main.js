@@ -5,6 +5,7 @@ const bgImg = document.querySelector('.bg-img');
 let showMenu = false;
 let currentFileName = currentFile();
 
+AOS.init();
 asyncToggle();
 
 menuBtn.addEventListener('click', menuClick);
@@ -31,6 +32,7 @@ async function asyncToggle() {
     const result = await resolvePromise();
     console.log(result);
     toggleBg();
+    AOS.refreshHard();
 }
 
 function toggleBg() {
@@ -58,5 +60,7 @@ function menuClick() {
     } else {
         showMenu = false;
         asyncToggle();
+        window.scrollTo(0, 0);
+        AOS.refresh();
     }
 }
